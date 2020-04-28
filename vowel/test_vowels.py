@@ -1,4 +1,3 @@
-import sys
 from unittest import TestCase
 
 from vowel.vowels import is_vowel_line, print_file_vowels
@@ -20,9 +19,6 @@ class Test(TestCase):
     def test_is_vowel_line_true_for_all_vowels_present_in_line(self):
         line = "brown fix attempt undone"
         assert is_vowel_line(line) == True
-
-
-class Test(TestCase):
 
     def test_print_file_vowels_throws_exception_if_file_not_found(self):
         self.assertRaises(Exception, print_file_vowels, "blah.txt")
